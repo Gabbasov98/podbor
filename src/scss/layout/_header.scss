@@ -219,6 +219,9 @@
       min-width: 130px;
       height: 45px;
       font-size: 11px;
+      &--hide{
+        display: none;
+      }
     }
   }
 }

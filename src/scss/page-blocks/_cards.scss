@@ -102,29 +102,29 @@
   }
   &__name{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 144%;
   }
   &__rating{
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 4px;
     &-item{
       margin-right: 5px;
     }
   }
   &__date{
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     color: #8E8E8E;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   &__content{
     margin-top: 20px;
   }
   &__desc{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 144%;
   }
 }
@@ -148,7 +148,7 @@
 @media screen and (max-width: 768px){
   .service-card{
     &__top{
-      font-size: 16px;
+      font-size: 18px;
       line-height: 112%;
       min-height: 68px;
       padding: 16px 20px;

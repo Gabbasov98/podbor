@@ -50,7 +50,7 @@
   }
   .feedback{
     &__item{
-      justify-content: unset;
+      padding-left: 17px;
     }
     &__title{
       font-size: 12px;
@@ -163,6 +163,10 @@
       padding-top: 20px;
     }
     .feedback{
+      &__item{
+        justify-content: unset;
+        padding-left: 0;
+      }
       &__title{
         font-size: 10px;
       }
