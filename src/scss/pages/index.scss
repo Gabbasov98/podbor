@@ -477,7 +477,7 @@
     &__content{
       padding: 16px 0 21px;
       min-height: 148px;
-      max-width: calc(100% - 123px);
+      max-width: calc(100% - 90px);
     }
     &__img{
       position: absolute;
@@ -486,17 +486,17 @@
       width: 187px;
     }
     &__title{
-      font-size: 16px;
+      font-size: 18px;
     }
     &__subtitle{
-      font-size: 10px;
-      line-height: 12px;
+      font-size: 13px;
+      line-height: 16px;
     }
     &__desc{
       margin-top: 12px;
-      font-size: 10px;
+      font-size: 11px;
       line-height: 14px;
-      max-width: 140px;
+      max-width: 150px;
     }
   }
 
