@@ -370,25 +370,33 @@
     .swiper{
       &-container{
         position: relative;
+        padding: 0 15px;
+      }
+      &-slide-prev,
+      &-slide-next~.swiper-slide{
+        opacity: 0;
       }
       &-button{
         &-prev,
         &-next{
-          width: 14px;
-          height: 14px;
+          width: 20px;
+          height: 20px;
           margin-top: 0;
           top: 50%;
           transform: translateY(-50%);
+          &.swiper-button-disabled{
+            opacity: 1;
+          }
         }
         &-next{
           right: unset;
           left: 100%;
-          margin-left: -2px;
+          margin-left: -10px;
         }
         &-prev{
           left: unset;
           right: 100%;
-          margin-right: -2px;
+          margin-right: -10px;
         }
       }
     }

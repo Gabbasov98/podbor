@@ -2,6 +2,7 @@ function certificateSlider() {
     var swiper = new Swiper('.certificate .swiper-container', {
         slidesPerView: 4,
         spaceBetween: 30,
+        loop: false,
         navigation: {
             nextEl: '.certificate .swiper-button-next',
             prevEl: '.certificate .swiper-button-prev',
@@ -10,11 +11,14 @@ function certificateSlider() {
             320: {
                 slidesPerView: 2,
                 spaceBetween: 10,
+                loop: true,
             },
             768: {
                 slidesPerView: 3,
+                loop: true,
             },
             992: {
+                loop: false,
                 slidesPerView: 4,
                 spaceBetween: 30,
             },
