@@ -1,31 +1,58 @@
 @import "../vars.scss";
 .breadcrumbs {
-    margin-top: 60px;
-    &__item {
+    margin: 14px 0 10px;
+    &__back{
         font-weight: 600;
-        font-size: 16px;
-        line-height: 110%;
-        position: relative;
-        font-weight: 400;
-        display: inline;
-        &:last-child {
-            font-weight: 600;
-        }
-        &:not(:first-child) {
-            margin-left: 24px;
-            &:before {
-                content: '';
-                position: absolute;
-                z-index: 1;
-                width: 3.51px;
-                height: 3.51px;
-                background-color: $primary;
-                border-radius: 1px;
-                transform: rotate(-45deg);
-                top: 7px;
-                right: 100%;
-                margin-right: 10px;
+        display: flex;
+        align-items: center;
+        color: $secondary;
+        &:hover{
+            span{
+                text-decoration: none;
             }
+        }
+        span{
+            text-decoration: underline;
+        }
+        svg{
+            margin-right: 1px;
+        }
+        &:hover{
+            color: $secondary;
+        }
+    }
+    &__items{
+        margin-top: 18px;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 129%;
+        display: inline;
+        &:not(:first-child) {
+            &:before {
+                content: '/';
+                margin: 0 5px 0 2px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .breadcrumbs{
+        margin-bottom: 6px;
+        &__back{
+            font-size: 14px;
+            line-height: 164%;
+            svg{
+                width: 18px;
+                height: auto;
+            }
+        }
+        &__items{
+            margin-top: 8px;
+        }
+        &__item{
+            font-size: 12px;
         }
     }
 }

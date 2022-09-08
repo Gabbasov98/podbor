@@ -22,7 +22,7 @@
                     <path d="M21.7208 6.5H4.27917C3.71077 6.5 3.25 6.96077 3.25 7.52917V7.6375C3.25 8.20589 3.71077 8.66667 4.27917 8.66667H21.7208C22.2892 8.66667 22.75 8.20589 22.75 7.6375V7.52917C22.75 6.96077 22.2892 6.5 21.7208 6.5Z" fill="black"/>
                 </svg>
             </button>
-            <a href="" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <div class="header__logo-img">
     <img src="img/logo.png" alt="">
 </div>
@@ -120,7 +120,7 @@
         </div>
 
         <nav class="nav">
-            <a href="" class="nav__link">
+            <a href="#services" class="nav__link">
                 <span>Услуги</span>
             </a>
             <a href="" class="nav__link">
@@ -132,10 +132,10 @@
             <a href="" class="nav__link nav__link--hide">
                 <span>СТАТЬи</span>
             </a>
-            <a href="" class="nav__link">
+            <a href="#feedback" class="nav__link">
                 <span>Отзывы</span>
             </a>
-            <a href="" class="nav__link">
+            <a href="#contacts" class="nav__link">
                 <span>Контакты</span>
             </a>
         </nav>
@@ -212,7 +212,7 @@
                 </div>
             </section>
 
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <div class="services__title display2">Услуги:</div>
                     <div class="services__items">
@@ -231,8 +231,14 @@
                                 <li>Гарантия на подобранный автомобиль 6 мес , вплоть до выкупа автомобиля</li>
                             </ul>
                             <div class="service-card__bottom">
+                                <div class="service-card__price">от 2900р.</div>
                                 <a href="" class="service-card__link text-link">Подробнее</a>
-                                <button class="service-card__btn btn btn-yellow">Оставить заявку</button>
+                                <button
+                                    data-bs-toggle="modal" data-bs-target="#modal1"
+                                    class="service-card__btn btn btn-yellow"
+                                >
+                                    Оставить заявку
+                                </button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -251,8 +257,14 @@
                                 <li>Письменный отчёт <br>          (диагностический лист + фото, видео)</li>
                             </ul>
                             <div class="service-card__bottom">
+                                <div class="service-card__price">от 4500р.</div>
                                 <a href="" class="service-card__link text-link">Подробнее</a>
-                                <button class="service-card__btn btn btn-yellow">Оставить заявку</button>
+                                <button
+                                        data-bs-toggle="modal" data-bs-target="#modal2"
+                                        class="service-card__btn btn btn-yellow"
+                                >
+                                    Оставить заявку
+                                </button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -268,8 +280,14 @@
                                 <li>Объективная рыночная цена</li>
                             </ul>
                             <div class="service-card__bottom">
+                                <div class="service-card__price">от 3000р.</div>
                                 <a href="" class="service-card__link text-link">Подробнее</a>
-                                <button class="service-card__btn btn btn-yellow">Оставить заявку</button>
+                                <button
+                                        data-bs-toggle="modal" data-bs-target="#modal3"
+                                        class="service-card__btn btn btn-yellow"
+                                >
+                                    Оставить заявку
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -321,9 +339,9 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="blog-card swiper-slide">
-                                    <div class="blog-card__img">
+                                    <a href="img/blog.webp" data-fancybox="" class="blog-card__img">
     <img src="img/blog.webp" alt="">
-</div>
+</a>
 <div class="blog-card__content">
     <div class="blog-card__title">Инструкция по технической проверке авто перед покупкой</div>
     <div class="blog-card__desc">Техническая проверка машины – обязательный пункт покупки авто с пробегом любого класса. Она включает множество пунктов. Мы дадим пошаговую инструкцию, что нужно сделать с...</div>
@@ -334,9 +352,9 @@
 
                                 </div>
                                 <div class="blog-card swiper-slide">
-                                    <div class="blog-card__img">
+                                    <a href="img/blog.webp" data-fancybox="" class="blog-card__img">
     <img src="img/blog.webp" alt="">
-</div>
+</a>
 <div class="blog-card__content">
     <div class="blog-card__title">Инструкция по технической проверке авто перед покупкой</div>
     <div class="blog-card__desc">Техническая проверка машины – обязательный пункт покупки авто с пробегом любого класса. Она включает множество пунктов. Мы дадим пошаговую инструкцию, что нужно сделать с...</div>
@@ -347,9 +365,9 @@
 
                                 </div>
                                 <div class="blog-card swiper-slide">
-                                    <div class="blog-card__img">
+                                    <a href="img/blog.webp" data-fancybox="" class="blog-card__img">
     <img src="img/blog.webp" alt="">
-</div>
+</a>
 <div class="blog-card__content">
     <div class="blog-card__title">Инструкция по технической проверке авто перед покупкой</div>
     <div class="blog-card__desc">Техническая проверка машины – обязательный пункт покупки авто с пробегом любого класса. Она включает множество пунктов. Мы дадим пошаговую инструкцию, что нужно сделать с...</div>
@@ -360,9 +378,9 @@
 
                                 </div>
                                 <div class="blog-card swiper-slide">
-                                    <div class="blog-card__img">
+                                    <a href="img/blog.webp" data-fancybox="" class="blog-card__img">
     <img src="img/blog.webp" alt="">
-</div>
+</a>
 <div class="blog-card__content">
     <div class="blog-card__title">Инструкция по технической проверке авто перед покупкой</div>
     <div class="blog-card__desc">Техническая проверка машины – обязательный пункт покупки авто с пробегом любого класса. Она включает множество пунктов. Мы дадим пошаговую инструкцию, что нужно сделать с...</div>
@@ -373,9 +391,9 @@
 
                                 </div>
                                 <div class="blog-card swiper-slide">
-                                    <div class="blog-card__img">
+                                    <a href="img/blog.webp" data-fancybox="" class="blog-card__img">
     <img src="img/blog.webp" alt="">
-</div>
+</a>
 <div class="blog-card__content">
     <div class="blog-card__title">Инструкция по технической проверке авто перед покупкой</div>
     <div class="blog-card__desc">Техническая проверка машины – обязательный пункт покупки авто с пробегом любого класса. Она включает множество пунктов. Мы дадим пошаговую инструкцию, что нужно сделать с...</div>
@@ -404,7 +422,7 @@
                 </div>
             </section>
 
-            <section class="feedback">
+            <section id="feedback" class="feedback">
                 <div class="container">
                     <div class="feedback__items">
                         <div class="feedback__item">
@@ -763,7 +781,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section id="contacts" class="contacts">
                 <div class="container">
                     <div class="contacts__inner">
                         <div class="contacts__items">
@@ -981,6 +999,163 @@
 </footer>
 
     </div>
+    <div class="modal fade" id="modal1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4099 11.9999L17.7099 7.70994C17.8982 7.52164 18.004 7.26624 18.004 6.99994C18.004 6.73364 17.8982 6.47825 17.7099 6.28994C17.5216 6.10164 17.2662 5.99585 16.9999 5.99585C16.7336 5.99585 16.4782 6.10164 16.2899 6.28994L11.9999 10.5899L7.70994 6.28994C7.52164 6.10164 7.26624 5.99585 6.99994 5.99585C6.73364 5.99585 6.47824 6.10164 6.28994 6.28994C6.10164 6.47825 5.99585 6.73364 5.99585 6.99994C5.99585 7.26624 6.10164 7.52164 6.28994 7.70994L10.5899 11.9999L6.28994 16.2899C6.19621 16.3829 6.12182 16.4935 6.07105 16.6154C6.02028 16.7372 5.99414 16.8679 5.99414 16.9999C5.99414 17.132 6.02028 17.2627 6.07105 17.3845C6.12182 17.5064 6.19621 17.617 6.28994 17.7099C6.3829 17.8037 6.4935 17.8781 6.61536 17.9288C6.73722 17.9796 6.86793 18.0057 6.99994 18.0057C7.13195 18.0057 7.26266 17.9796 7.38452 17.9288C7.50638 17.8781 7.61698 17.8037 7.70994 17.7099L11.9999 13.4099L16.2899 17.7099C16.3829 17.8037 16.4935 17.8781 16.6154 17.9288C16.7372 17.9796 16.8679 18.0057 16.9999 18.0057C17.132 18.0057 17.2627 17.9796 17.3845 17.9288C17.5064 17.8781 17.617 17.8037 17.7099 17.7099C17.8037 17.617 17.8781 17.5064 17.9288 17.3845C17.9796 17.2627 18.0057 17.132 18.0057 16.9999C18.0057 16.8679 17.9796 16.7372 17.9288 16.6154C17.8781 16.4935 17.8037 16.3829 17.7099 16.2899L13.4099 11.9999Z" fill="black"/>
+                </svg>
+            </button>
+            <div class="modal__title">Автоподбор «под ключ»</div>
+        </div>
+
+        <form class="modal__form">
+            <div class="modal__groups">
+                <div class="modal__subtitle">Ваши данные:</div>
+                <div class="modal__grid">
+                    <fieldset class="form-group">
+                        <label>Имя</label>
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="Телефон">
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="modal__groups">
+                <div class="modal__subtitle">Данные по подбору:</div>
+                <div class="modal__grid">
+                    <fieldset class="form-group">
+                        <label>Марка, модель автомобиля</label>
+                        <input type="text" placeholder="Марка, модель автомобиля">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Бюджет на автомобиль</label>
+                        <input type="text" placeholder="Бюджет на автомобиль">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Годы выпуска</label>
+                        <input type="text" placeholder="Годы выпуска">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Пробег “до какого “</label>
+                        <input type="text" placeholder="Пробег “до какого “">
+                    </fieldset>
+                    <fieldset class="form-group modal__full">
+                        <label>Прочие пожелания (по цвету,комплектациям, особенностям и т.д.)</label>
+                        <textarea placeholder="Прочие пожелания..."></textarea>
+                    </fieldset>
+                </div>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Оставить заявку</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top modal__top--green">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4099 11.9999L17.7099 7.70994C17.8982 7.52164 18.004 7.26624 18.004 6.99994C18.004 6.73364 17.8982 6.47825 17.7099 6.28994C17.5216 6.10164 17.2662 5.99585 16.9999 5.99585C16.7336 5.99585 16.4782 6.10164 16.2899 6.28994L11.9999 10.5899L7.70994 6.28994C7.52164 6.10164 7.26624 5.99585 6.99994 5.99585C6.73364 5.99585 6.47824 6.10164 6.28994 6.28994C6.10164 6.47825 5.99585 6.73364 5.99585 6.99994C5.99585 7.26624 6.10164 7.52164 6.28994 7.70994L10.5899 11.9999L6.28994 16.2899C6.19621 16.3829 6.12182 16.4935 6.07105 16.6154C6.02028 16.7372 5.99414 16.8679 5.99414 16.9999C5.99414 17.132 6.02028 17.2627 6.07105 17.3845C6.12182 17.5064 6.19621 17.617 6.28994 17.7099C6.3829 17.8037 6.4935 17.8781 6.61536 17.9288C6.73722 17.9796 6.86793 18.0057 6.99994 18.0057C7.13195 18.0057 7.26266 17.9796 7.38452 17.9288C7.50638 17.8781 7.61698 17.8037 7.70994 17.7099L11.9999 13.4099L16.2899 17.7099C16.3829 17.8037 16.4935 17.8781 16.6154 17.9288C16.7372 17.9796 16.8679 18.0057 16.9999 18.0057C17.132 18.0057 17.2627 17.9796 17.3845 17.9288C17.5064 17.8781 17.617 17.8037 17.7099 17.7099C17.8037 17.617 17.8781 17.5064 17.9288 17.3845C17.9796 17.2627 18.0057 17.132 18.0057 16.9999C18.0057 16.8679 17.9796 16.7372 17.9288 16.6154C17.8781 16.4935 17.8037 16.3829 17.7099 16.2899L13.4099 11.9999Z" fill="black"/>
+                </svg>
+            </button>
+            <div class="modal__title">Проверка автомобиля перед покупкой (выездная диагностика)</div>
+        </div>
+
+        <form class="modal__form">
+            <div class="modal__groups">
+                <div class="modal__subtitle">Ваши данные:</div>
+                <div class="modal__grid">
+                    <fieldset class="form-group">
+                        <label>Имя</label>
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="Телефон">
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="modal__groups">
+                <div class="modal__subtitle">Данные автомобиля:</div>
+                <div class="modal__grid">
+                    <fieldset class="form-group modal__full">
+                        <label>Ссылка на объявление</label>
+                        <input type="text" placeholder="Ссылка на объявление">
+                    </fieldset>
+                    <fieldset class="form-group modal__full">
+                        <label>Комментарии</label>
+                        <textarea placeholder="Комментарии..."></textarea>
+                    </fieldset>
+                </div>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Оставить заявку</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top modal__top--red">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4099 11.9999L17.7099 7.70994C17.8982 7.52164 18.004 7.26624 18.004 6.99994C18.004 6.73364 17.8982 6.47825 17.7099 6.28994C17.5216 6.10164 17.2662 5.99585 16.9999 5.99585C16.7336 5.99585 16.4782 6.10164 16.2899 6.28994L11.9999 10.5899L7.70994 6.28994C7.52164 6.10164 7.26624 5.99585 6.99994 5.99585C6.73364 5.99585 6.47824 6.10164 6.28994 6.28994C6.10164 6.47825 5.99585 6.73364 5.99585 6.99994C5.99585 7.26624 6.10164 7.52164 6.28994 7.70994L10.5899 11.9999L6.28994 16.2899C6.19621 16.3829 6.12182 16.4935 6.07105 16.6154C6.02028 16.7372 5.99414 16.8679 5.99414 16.9999C5.99414 17.132 6.02028 17.2627 6.07105 17.3845C6.12182 17.5064 6.19621 17.617 6.28994 17.7099C6.3829 17.8037 6.4935 17.8781 6.61536 17.9288C6.73722 17.9796 6.86793 18.0057 6.99994 18.0057C7.13195 18.0057 7.26266 17.9796 7.38452 17.9288C7.50638 17.8781 7.61698 17.8037 7.70994 17.7099L11.9999 13.4099L16.2899 17.7099C16.3829 17.8037 16.4935 17.8781 16.6154 17.9288C16.7372 17.9796 16.8679 18.0057 16.9999 18.0057C17.132 18.0057 17.2627 17.9796 17.3845 17.9288C17.5064 17.8781 17.617 17.8037 17.7099 17.7099C17.8037 17.617 17.8781 17.5064 17.9288 17.3845C17.9796 17.2627 18.0057 17.132 18.0057 16.9999C18.0057 16.8679 17.9796 16.7372 17.9288 16.6154C17.8781 16.4935 17.8037 16.3829 17.7099 16.2899L13.4099 11.9999Z" fill="black"/>
+                </svg>
+            </button>
+            <div class="modal__title">Оценка автомобиля перед продажей</div>
+        </div>
+
+        <form class="modal__form">
+            <div class="modal__groups">
+                <div class="modal__subtitle">Ваши данные:</div>
+                <div class="modal__grid">
+                    <fieldset class="form-group">
+                        <label>Имя</label>
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="Телефон">
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="modal__groups">
+                <div class="modal__subtitle">Данные автомобиля:</div>
+                <div class="modal__grid">
+                    <fieldset class="form-group">
+                        <label>Автомобиль (марка,модель)</label>
+                        <input type="text" placeholder="Автомобиль (марка,модель)">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label>Год выпуска</label>
+                        <input type="text" placeholder="Год выпуска">
+                    </fieldset>
+                    <fieldset class="form-group modal__full">
+                        <label>Адрес места осмотра</label>
+                        <input type="text" placeholder="Адрес места осмотра">
+                    </fieldset>
+                </div>
+            </div>
+
+            <button class="modal__btn btn btn-yellow">Оставить заявку</button>
+        </form>
+
+    </div>
+</div>
+
+
+<!-- <div class="modal-backdrop show"></div>-->
+
 
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

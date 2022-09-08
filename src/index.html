@@ -73,7 +73,7 @@
                 </div>
             </section>
 
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <div class="services__title display2">Услуги:</div>
                     <div class="services__items">
@@ -92,8 +92,14 @@
                                 <li>Гарантия на подобранный автомобиль 6 мес , вплоть до выкупа автомобиля</li>
                             </ul>
                             <div class="service-card__bottom">
+                                <div class="service-card__price">от 2900р.</div>
                                 <a href="" class="service-card__link text-link">Подробнее</a>
-                                <button class="service-card__btn btn btn-yellow">Оставить заявку</button>
+                                <button
+                                    data-bs-toggle="modal" data-bs-target="#modal1"
+                                    class="service-card__btn btn btn-yellow"
+                                >
+                                    Оставить заявку
+                                </button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -112,8 +118,14 @@
                                 <li>Письменный отчёт <br>          (диагностический лист + фото, видео)</li>
                             </ul>
                             <div class="service-card__bottom">
+                                <div class="service-card__price">от 4500р.</div>
                                 <a href="" class="service-card__link text-link">Подробнее</a>
-                                <button class="service-card__btn btn btn-yellow">Оставить заявку</button>
+                                <button
+                                        data-bs-toggle="modal" data-bs-target="#modal2"
+                                        class="service-card__btn btn btn-yellow"
+                                >
+                                    Оставить заявку
+                                </button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -129,8 +141,14 @@
                                 <li>Объективная рыночная цена</li>
                             </ul>
                             <div class="service-card__bottom">
+                                <div class="service-card__price">от 3000р.</div>
                                 <a href="" class="service-card__link text-link">Подробнее</a>
-                                <button class="service-card__btn btn btn-yellow">Оставить заявку</button>
+                                <button
+                                        data-bs-toggle="modal" data-bs-target="#modal3"
+                                        class="service-card__btn btn btn-yellow"
+                                >
+                                    Оставить заявку
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -215,7 +233,7 @@
                 </div>
             </section>
 
-            <section class="feedback">
+            <section id="feedback" class="feedback">
                 <div class="container">
                     <div class="feedback__items">
                         <div class="feedback__item">
@@ -286,7 +304,7 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section id="contacts" class="contacts">
                 <div class="container">
                     <div class="contacts__inner">
                         <div class="contacts__items">
@@ -370,6 +388,7 @@
         </main>
         @@include('components/page-blocks/_footer.html')
     </div>
+    @@include('components/_popups.html')
 
     @@include('components/page-blocks/_scripts.html')
 </body>

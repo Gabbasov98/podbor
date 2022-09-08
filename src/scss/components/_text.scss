@@ -4,6 +4,13 @@
   line-height: 132%;
 }
 
+.display3{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+}
+
+.article__text ul,
 .mlist{
   font-size: 16px;
   line-height: 112%;
@@ -17,7 +24,7 @@
       height: 4px;
       border-radius: 50%;
       background-color: $black;
-      transform: translateY(5px);
+      transform: translateY(8px);
       margin-right: 5px;
       flex-shrink: 0;
     }
@@ -37,6 +44,10 @@
   .display2{
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .display3{
+    font-size: 14px;
   }
 
   .mlist{

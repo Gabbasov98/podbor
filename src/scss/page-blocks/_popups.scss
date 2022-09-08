@@ -1,7 +1,117 @@
-@import 'vars';
-@import 'mixins';
 .modal-backdrop {
     &.show {
-        opacity: 0.7;
+        background: #4B4B4B;
+        opacity: 0.4;
+    }
+}
+
+.modal{
+    &-dialog{
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.07);
+        border-radius: 5px;
+        overflow: hidden;
+        max-width: 600px;
+        width: calc(100% - 30px);
+        pointer-events: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__top{
+        min-height: 86px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 70px;
+        background: rgba(#2DC8FF,.2);
+        position: relative;
+        &--green{
+            background: rgba(#00A41C,.1);
+        }
+        &--red{
+            background: rgba(#FF852D,.1);
+        }
+    }
+    &__close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 105%;
+    }
+    &__form{
+        padding: 24px 70px 50px;
+    }
+    &__groups{
+        &:not(:first-child){
+            margin-top: 26px;
+        }
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 26px 20px;
+    }
+    &__full{
+        grid-column: 1/3;
+    }
+    &__btn{
+        border-radius: 30px;
+        width: 200px;
+        height: 48px;
+        margin: 26px auto 0;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .modal{
+        &__top{
+            padding: 20px 12px;
+            min-height: 76px;
+        }
+        &__close{
+            top: 6px;
+            right: 6px;
+            svg{
+                width: 16px;
+                height: auto;
+            }
+        }
+        &__title{
+            font-size: 16px;
+            line-height: 112%;
+        }
+        &__form{
+            padding: 16px 35px 38px;
+        }
+        &__subtitle{
+            font-size: 14px;
+            line-height: 114%;
+            margin-bottom: 12px;
+        }
+        &__grid{
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        &__full{
+            grid-column: 1/2;
+        }
+        &__btn{
+            margin-top: 22px;
+            max-width: 100%;
+        }
     }
 }
