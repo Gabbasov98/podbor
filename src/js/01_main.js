@@ -129,3 +129,22 @@ function closeHeader() {
     body.classList.remove("fixed-body")
     header.classList.remove("header--active")
 }
+
+
+
+setFramesHeight()
+
+window.onresize = function() {
+    setFramesHeight()
+};
+
+function setFramesHeight(){
+    let frames = document.querySelectorAll(".youtube-frame")
+    frames.forEach(el => {
+        let frameWidth = el.offsetWidth
+        el.style.height = `${frameWidth*0.58}px`
+        console.log(frameWidth)
+    })
+}
+
+
