@@ -161,10 +161,10 @@
     }
     &__feedback{
       padding-top: 20px;
+      max-width: 228px;
     }
     .feedback{
       &__item{
-        justify-content: unset;
         padding-left: 0;
       }
       &__title{
