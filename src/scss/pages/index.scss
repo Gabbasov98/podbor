@@ -194,9 +194,11 @@
       overflow: unset;
     }
     &-slide{
-      &-prev,
-      &-next+.swiper-slide~.swiper-slide{
-        opacity: 0;
+      opacity: 0;
+      &-active,
+      &-next,
+      &-next+.swiper-slide{
+        opacity: 1;
       }
     }
   }
@@ -215,9 +217,11 @@
       overflow: unset;
     }
     &-slide{
-      &-prev,
-      &-next+.swiper-slide~.swiper-slide{
-        opacity: 0;
+      opacity: 0;
+      &-active,
+      &-next,
+      &-next+.swiper-slide{
+        opacity: 1;
       }
     }
   }
